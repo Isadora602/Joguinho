@@ -8,6 +8,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.bound,
 		C3.Behaviors.scrollto,
 		C3.Plugins.Text,
+		C3.Plugins.Button,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.Sprite.Acts.Destroy,
@@ -20,7 +21,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Exps.VectorX,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Cnds.EveryTick,
-		C3.Plugins.Text.Acts.SetText
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Button.Cnds.OnClicked
 	];
 };
 self.C3_JsPropNameTable = [
@@ -46,6 +49,12 @@ self.C3_JsPropNameTable = [
 	{Texto2: 0},
 	{Sprite3: 0},
 	{Sprite4: 0},
+	{Sprite5: 0},
+	{Sprite6: 0},
+	{Porta: 0},
+	{Texto3: 0},
+	{Botão: 0},
+	{Sprite7: 0},
 	{flor: 0}
 ];
 
@@ -66,5 +75,11 @@ self.InstanceType = {
 	Texto: class extends self.ITextInstance {},
 	Texto2: class extends self.ITextInstance {},
 	Sprite3: class extends self.ISpriteInstance {},
-	Sprite4: class extends self.ISpriteInstance {}
+	Sprite4: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {},
+	Sprite6: class extends self.ISpriteInstance {},
+	Porta: class extends self.ISpriteInstance {},
+	Texto3: class extends self.ITextInstance {},
+	Botão: class extends self.IButtonInstance {},
+	Sprite7: class extends self.ISpriteInstance {}
 }
