@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.Pin,
+		C3.Behaviors.solid,
+		C3.Behaviors.Platform,
+		C3.Behaviors.bound,
+		C3.Behaviors.scrollto,
+		C3.Plugins.Text,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Behaviors.Pin.Acts.PinByImagePoint,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Cnds.Compare,
+		C3.Behaviors.Platform.Exps.VectorX,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Text.Acts.SetText
+	];
+};
+self.C3_JsPropNameTable = [
+	{Fixar: 0},
+	{Player: 0},
+	{Sólido: 0},
+	{Chao: 0},
+	{Espinho: 0},
+	{Arvore1: 0},
+	{Arvore2: 0},
+	{Arvore3: 0},
+	{Fundo: 0},
+	{Moeda: 0},
+	{Casita: 0},
+	{Plataforma: 0},
+	{RestritoAoLayout: 0},
+	{CentrarEm: 0},
+	{Colisao: 0},
+	{Vinhas: 0},
+	{Sprite: 0},
+	{Sprite2: 0},
+	{Texto: 0},
+	{Texto2: 0},
+	{Sprite3: 0},
+	{Sprite4: 0},
+	{flor: 0}
+];
+
+self.InstanceType = {
+	Player: class extends self.ISpriteInstance {},
+	Chao: class extends self.ISpriteInstance {},
+	Espinho: class extends self.ISpriteInstance {},
+	Arvore1: class extends self.ISpriteInstance {},
+	Arvore2: class extends self.ISpriteInstance {},
+	Arvore3: class extends self.ISpriteInstance {},
+	Fundo: class extends self.ISpriteInstance {},
+	Moeda: class extends self.ISpriteInstance {},
+	Casita: class extends self.ISpriteInstance {},
+	Colisao: class extends self.ISpriteInstance {},
+	Vinhas: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Texto: class extends self.ITextInstance {},
+	Texto2: class extends self.ITextInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {}
+}
